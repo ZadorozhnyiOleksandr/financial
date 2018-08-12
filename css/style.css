@@ -1,0 +1,716 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+/*  font-family: 'Poppins', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #ffffff;
+    color: #757575;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Muli', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container{
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section-title {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444444;
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+
+.main-header {
+    background-image: url(../img/header-bg.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding-bottom: 240px;
+}
+
+.main-nav {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 975px;
+    margin: 0 auto;
+
+}
+
+.main-logo {
+    width: 194px;
+    height: 29px;
+    margin-right: 50px;
+}
+
+.main-menu {
+    width: 980px;
+    text-transform: uppercase;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.main-menu:hover li:not(:hover) {
+    opacity: 0.5;
+}
+
+.main-menu-item a {
+    position: relative;
+}
+
+.main-menu-item a::before,
+.main-menu-item a::after {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    content: "";
+    transition: .35s ease;
+    opacity: 0;
+}
+
+.main-menu-item a::before {
+    right: 0;
+    top: 0;
+    border-right: 3px solid red;
+    border-top: 3px solid red;
+    transform: translate(-100%, 50%);
+}
+
+.main-menu-item a::after {
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid red;
+    border-bottom: 3px solid red;
+    transform: translate(100%, -50%);
+}
+
+.main-menu-item a:hover:before,
+.main-menu-item a:hover:after {
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+
+.main-menu-item a {
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-description {
+    padding-left: 390px;
+    padding-top: 275px;
+}
+
+.site-description-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    line-height: 74px;
+}
+
+.site-description h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 55px;
+    line-height: 74px;
+}
+
+.site-description-more {
+    margin-bottom: 45px;
+}
+
+.more {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: .3s;
+    text-align: center;
+    position: relative;
+}
+
+.more:hover {
+    background-color: #ffffff;
+    color: #009688;
+}
+
+.more:hover::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/arrow-right.svg);
+    width: 10px;
+
+    top: 0;
+    right: 0;
+}
+
+.advantages {
+    margin-top: -40px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.advantages-description {
+    width: 360px;
+    padding-top: 120px;
+    color: #fff;
+    background-color: #0d9587;
+    background-image: url(../img/advantages-description.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.advantages-description-content {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.advantages-description-content .section-title {
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.advantages-description-content p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    display: block;
+    margin-bottom: 130px;
+}
+
+.advantages-description .more {
+    position: relative;
+    left: -23px;
+    margin-bottom: 25px;
+}
+
+.advantages-list {
+    width: 780px;
+    background-color: #ffffff;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.advantages-list-item {
+    width: 365px;
+    padding-left: 100px;
+    background-repeat: no-repeat;
+    background-position: 30px 0;
+}
+
+.financial-experts {
+    background-image: url(../img/financial-experts-img.png);
+}
+
+.business-solution {
+    background-image: url(../img/business-solution-img.png);
+}
+
+.creative-process {
+    background-image: url(../img/creative-process-img.png);
+}
+
+.support-img {
+    background-image: url(../img/24-7-support-img.png);
+}
+
+.company-values-content {
+    padding-top: 135px;
+    padding-left: 390px;
+}
+
+.company-values-content p {
+    display: block;
+    margin-bottom: 70px;
+}
+
+.diagram {
+    position: relative;
+}
+
+.company-values-content {
+    position: relative;
+    background-image: url(../img/values-man.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.company-values-img {
+    padding-left: 75px;
+    padding-bottom: 150px;
+}
+
+.company-values-percent {
+    color: #009688;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 400;
+    position: absolute;
+    top: -12px;
+    left: 95px;
+}
+
+.company-values-list-item {
+    width: 200px;
+    position: absolute;
+}
+
+.company-values-list-item:nth-child(1) {
+    left: 0;
+    top: 55px;
+}
+
+.company-values-list-item:nth-child(2) {
+    right: 35px;
+    top: 120px;
+}
+
+.company-values-list-item:nth-child(3) {
+    bottom: 105px;
+    left: 90px;
+}
+
+.theme-description {
+    background-color: #009688;
+    background-image: url(../img/theme-description-bg.png);
+    padding: 125px 0;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+.theme-description h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 64px;
+    margin-bottom: 25px;
+}
+
+.theme-description p {
+    margin-bottom: 45px;
+}
+
+.theme-description .more {
+    margin-right: 30px;
+}
+
+.contact-us.more {
+    margin-right: 0;
+}
+
+.core-services {
+    text-align: center;
+    padding-top: 135px;
+    padding-bottom: 120px;
+}
+
+.core-services > p {
+    margin-bottom: 65px;
+}
+
+.core-services-list {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.core-services-list-item {
+    width: 360px;
+    padding-left: 60px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-bottom: 60px;
+}
+
+.audit-assurance {
+    background-image: url(../img/audit-assurance.png);
+}
+
+.business-services {
+    background-image: url(../img/business-services.png);
+}
+
+.financial-planning {
+    background-image: url(../img/financial-planning.png);
+}
+
+.it-control-solutions {
+    background-image: url(../img/it-control-solutions.png);
+}
+
+.tax-planning {
+    background-image: url(../img/tax-planning.png);
+}
+
+.tax-advisory-services {
+    background-image: url(../img/tax-advisory-services.png);
+}
+
+.our-services {
+    text-align: center;
+    padding-bottom: 115px;
+}
+
+.our-services > p {
+    display: block;
+    margin-bottom: 120px;
+}
+
+.our-services-list {
+    text-align: left;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.our-services-list-item {
+    width: 360px;
+    padding-top: 236px;
+    background-repeat: no-repeat;
+}
+
+.our-services-container {
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -90px;
+    padding: 25px 20px;
+}
+
+.our-services-list-item:hover h3 {
+    color: #009688;
+}
+
+.services-financial-planning {
+    background-image: url(../img/services-financial-planning.jpg);
+}
+
+.stocks {
+    background-image: url(../img/stocks.jpg);
+}
+
+.cash-cards-lending {
+    background-image: url(../img/cash-cards-lending.jpg);
+}
+
+.investments {
+    background-image: url(../img/investments.jpg);
+}
+
+.personal-trust-services {
+    background-image: url(../img/personal-trust-services.jpg);
+}
+
+.insurance-annuities {
+    background-image: url(../img/insurance-annuities.jpg);
+}
+
+.footer-middle {
+    padding: 85px 0;
+    background-color: #313131;
+}
+
+.footer-middle .container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-middle-item {
+    width: 263px;
+}
+
+.footer-middle h3 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+.recent-news-item {
+    padding-left: 75px;
+    margin-bottom: 45px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.recent-news-item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.recent-news-item time {
+    font-size: 10px;
+    line-height: 20px;
+    color: #6b6b6b;
+}
+
+.recent-news-item:nth-child(1) {
+    background-image: url(../img/recent-news-item-1.jpg);
+}
+
+.recent-news-item:nth-child(2) {
+    background-image: url(../img/recent-news-item-2.jpg);
+}
+
+.useful-links {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+.useful-links-column-right {
+    min-width: 105px;
+    margin-left: auto;
+}
+
+.useful-links a {
+    font-size: 13px;
+    line-height: 36px;
+    text-decoration: none;
+    color: #969595;
+}
+
+.useful-links a:hover {
+    color: #ffffff;
+}
+
+.subscribe-form {
+    margin-bottom: 45px;
+}
+
+.subscribe-form input[type="email"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 217px;
+    margin: 15px 0;
+    padding: 7px 10px;
+}
+
+.subscribe-form button[type="submit"] {
+    background-color: #009688;
+    border: none;
+    height: 33px;
+    width: 33px;
+}
+
+.fa-check {
+    color: #ffffff;
+}
+
+.footer-social {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #6b6b6b;
+    width: 36px;
+    height: 36px;
+    transition: .3s;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-link {
+    background-color: #2e2e2e;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.footer-social-link:hover {
+    background-color: #31aae2;
+}
+
+.footer-social-link:hover a {
+    color: #ffffff;
+}
+
+.footer-middle-item p {
+    display: block;
+    margin: 15px 0;
+}
+
+.footer-contacts-item {
+    padding: 10px 0;
+    padding-left: 28px;
+    font-size: 13px;
+    line-height: 22px;
+    border-top: 1px solid #3c3c3c;
+    position: relative;
+}
+
+.footer-contacts-item i {
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+@media (max-width: 1160px) {
+    .container {
+        width: 960px;
+    }
+
+    .site-description {
+        padding-left: 100px;
+        padding-top: 100px;
+    }
+
+    .advantages-list-item {
+        width: 318px;
+    }
+
+    .company-values-list-item:nth-child(2) {
+        right: -41px;
+        top: 20px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .container {
+        width: 800px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 800px;
+        padding-top: 0;
+    }
+
+    .main-menu {
+        width: 800px;
+    }
+
+    .main-logo {
+        margin: 30px 0;
+    }
+
+    .main-header {
+        padding-bottom: 100px;
+    }
+
+    .advantages-list-item {
+        width: auto;
+    }
+
+    .company-values-content {
+        background-image: none;
+    }
+
+    .company-values-content {
+        padding-left: 0;
+    }
+    
+    .company-values-list-item:nth-child(2) {
+        right: 51px;
+        top: 33px;
+    }
+
+    .subscribe-form input[type="email"] {
+        width: 150px;
+    }
+}
+
+@media (max-width: 925px) {
+    .container  {
+        width: 640px;
+    }
+
+    .main-menu {
+        width: auto;
+    }
+
+    .site-description-title {
+        font-size: 39px;
+        line-height: 42px;
+    }
+
+    .advantages-description-content .section-title {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .company-values-list-item:nth-child(2) {
+        right: -58px;
+    }
+
+    .core-services-list-item {
+        width: 300px;
+    }
+
+    .our-services-list-item {
+        width: 300px;
+    }
+
+    .footer-middle .container {
+        flex-wrap: wrap;
+    }
+
+    .footer-middle-item {
+        margin-bottom: 20px;
+    }
+}
